@@ -1,0 +1,64 @@
+body {
+    background-color: #A7D8F6;
+    font-family: 'simp', sans-serif;
+    text-align: center;
+    color: #FFD90F;
+    text-shadow: 3px 3px #000000;
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+@font-face {
+    font-family: simp;
+    src: url(../fonts/Simpsonfont.ttf );
+}
+
+
+h1 {
+  font-family: 'simp', sans-serif;
+  text-align : center;
+  color :  #FFD90F;
+  text-shadow: 3px 3px #000000;
+  font-size: 70px;
+  margin-top : 20px;
+}
+
+#topbar {
+    background-color: #A7D8F6;
+}
+
+#middlebarcenter {
+    margin-top: 50px;
+}
+
+#bottombar {
+    background-color: ;
+}
+
+table {
+    text-align: center;
+    background-color: #ff81c1;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    color: #FFD90F;
+    font-size: 50px;
+    font-family: 'simp', sans-serif;
+    text-shadow: 3px 3px #000000;
+    border-width: 5px;
+    border-color: ;
+    border-radius: 20px 0 0 0;
+    border: solid black 2px;
+}
+
+.marge {
+    margin-bottom: 50px;
+
+}
+
+.homer {
+    margin-top: 30px;
+
+}
