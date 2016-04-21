@@ -1,5 +1,5 @@
 body {
-    background-color: #A7D8F6;
+    background-color: #A7D8F6  ;
     font-family: 'simp', sans-serif;
     text-align: center;
     color: #FFD90F;
@@ -21,14 +21,21 @@ h1 {
   text-shadow: 3px 3px #000000;
   font-size: 70px;
   margin-top : 20px;
+  /*position: absolute;*/
+  /*padding-top: 50px;*/
 }
 
 #topbar {
     background-color: #A7D8F6;
+    min-height: 75px;
+
 }
 
 #middlebarcenter {
-    margin-top: 50px;
+    margin-top: 0px;
+    /*max-width: 400px;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
 }
 
 #bottombar {
@@ -51,14 +58,37 @@ td {
     border-color: ;
     border-radius: 20px 0 0 0;
     border: solid black 2px;
+
 }
 
 .marge {
-    margin-bottom: 50px;
+    /*margin-bottom: 70px;*/
 
 }
 
 .homer {
     margin-top: 30px;
+
+}
+
+@media (max-width: 480px) {
+/*.container {
+  max-width: 650px;
+}*/
+h1 {
+  font-size: 35px;
+  margin-top: -20px;
+  /*padding-top: 80px;
+  position: absolute;
+  bottom: 435px;
+  text-align: center;
+  width: 92%;
+*/
+}
+/*td {
+  max-width: 400px;*/
+
+}
+
 
 }

@@ -159,7 +159,6 @@ $(function() {
             } else {
                 $(this).text("M");
                 ur.splice(2, 1, 100);
-                // ur[2].push(2, 1, 100);
                 getWinner();
             }
         } //true
