@@ -1,22 +1,22 @@
-
-
 $(function() {
 
     ion.sound({
-        sounds: [
-            {
-              name: "intro",
-          preload: true,
-          ready_callback: function () {
-                console.log("ready")}
-        },
-            {name: "whoo",
-          preload: true},
-            {name: "miracle2",
-          preload: true},
-            {name: "doh1",
-          preload: true}
-        ],
+        sounds: [{
+            name: "intro",
+            preload: true,
+            ready_callback: function() {
+                console.log("ready")
+            }
+        }, {
+            name: "whoo",
+            preload: true
+        }, {
+            name: "miracle2",
+            preload: true
+        }, {
+            name: "doh1",
+            preload: true
+        }],
 
         path: "sounds/"
     });
@@ -24,12 +24,14 @@ $(function() {
     // ion.sound.play("intro");
 
     function intro() {
-      ion.sound.play("intro");
-      console.log("introfunction");
+        ion.sound.play("intro");
+        console.log("introfunction");
 
     };
 
-    intro();
+    window.onload = (function() {
+        intro();
+    });
 
     $(".msg").hide();
 
