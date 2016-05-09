@@ -9,7 +9,6 @@ $(function() {
         ],
 
         path: "sounds/"
-        // preload: true
     });
 
     function intro() {
