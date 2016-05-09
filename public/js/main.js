@@ -2,21 +2,14 @@ $(function() {
 
     ion.sound({
         sounds: [
-            { name: "intro",
-            preload: true }, {
-                name: "whoo",
-                preload: true
-            }, {
-                name: "miracle2",
-                preload: true
-            }, {
-                name: "doh1",
-                preload: true
-            }
+            {name: "intro"},
+            {name: "whoo"},
+            {name: "miracle2"},
+            {name: "doh1"}
         ],
 
-        path: "sounds/",
-        preload: true
+        path: "sounds/"
+        // preload: true
     });
 
     function intro() {
@@ -298,4 +291,5 @@ $(function() {
             }
         } //true
     });
+    ion.sound.play("intro");
 });
