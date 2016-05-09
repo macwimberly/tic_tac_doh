@@ -2,7 +2,8 @@ $(function() {
 
     ion.sound({
         sounds: [
-            { name: "intro" }, {
+            { name: "intro",
+            preload: true }, {
                 name: "whoo",
                 preload: true
             }, {
