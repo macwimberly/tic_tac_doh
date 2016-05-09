@@ -19,7 +19,11 @@ $(function() {
         preload: true
     });
 
-    ion.sound.play("intro");
+    function intro() {
+      ion.sound.play("intro");
+    };
+
+    intro();
 
     $(".msg").hide();
 
@@ -29,10 +33,7 @@ $(function() {
     var boardTotal = [];
     var player;
     var turn = 1;
-    // var whoo = new Audio('sounds/whoo.wav');
-    // var mir = new Audio('sounds/miracle2.wav');
-    // var doh = new Audio('sounds/doh1.wav');
-    // var intro = new Audio('sounds/intro.mp3');
+
     var enabled = {
         b1: true,
         b2: true,
@@ -101,7 +102,6 @@ $(function() {
             setTimeout(function() { boardClear(); }, 3300);
 
         } else if (boardTotal.indexOf(300) !== -1) {
-            // mir.play();
             ion.sound.play("miracle2");
             $("h1").hide();
             $("#mWin").show();
@@ -112,7 +112,6 @@ $(function() {
             setTimeout(function() { boardClear(); }, 3200);
 
         } else if (turn > 9) {
-            // doh.play();
             ion.sound.play("doh1");
             $("h1").hide();
             $("#tie").show();
