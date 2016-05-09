@@ -4,8 +4,12 @@ $(function() {
 
     ion.sound({
         sounds: [
-            {name: "intro",
-          preload: true},
+            {
+              name: "intro",
+          preload: true,
+          ready_callback: function () {
+                console.log("ready")}
+        },
             {name: "whoo",
           preload: true},
             {name: "miracle2",
@@ -21,7 +25,7 @@ $(function() {
 
     function intro() {
       ion.sound.play("intro");
-      console.log("intro");
+      console.log("introfunction");
 
     };
 
