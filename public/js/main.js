@@ -31,6 +31,7 @@ $(function() {
 
     window.onload = (function() {
         intro();
+        console.log("onload");
     });
 
     $(".msg").hide();
