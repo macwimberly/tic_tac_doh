@@ -11,7 +11,7 @@ $(function() {
     var whoo = new Audio('sounds/whoo.wav');
     var mir = new Audio('sounds/miracle2.wav');
     var doh = new Audio('sounds/doh1.wav');
-    var intro = new Audio('sounds/intro.wav');
+    var intro = new Audio('sounds/intro.mp3');
     var enabled = {
         b1: true,
         b2: true,
@@ -43,7 +43,7 @@ $(function() {
             b8: true,
             b9: true
         };
-        console.log(enabled.b1);
+
         turn = 1;
     }
 
