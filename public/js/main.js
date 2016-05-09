@@ -1,3 +1,5 @@
+
+
 $(function() {
 
     ion.sound({
@@ -15,8 +17,12 @@ $(function() {
         path: "sounds/"
     });
 
+    // ion.sound.play("intro");
+
     function intro() {
       ion.sound.play("intro");
+      console.log("intro");
+
     };
 
     intro();
@@ -294,5 +300,5 @@ $(function() {
             }
         } //true
     });
-    ion.sound.play("intro");
+
 });
