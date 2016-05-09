@@ -1,5 +1,25 @@
 $(function() {
 
+    ion.sound({
+        sounds: [
+            { name: "intro" }, {
+                name: "whoo",
+                preload: true
+            }, {
+                name: "miracle2",
+                preload: true
+            }, {
+                name: "doh1",
+                preload: true
+            }
+        ],
+
+        path: "sounds/",
+        preload: true
+    });
+
+    ion.sound.play("intro");
+
     $(".msg").hide();
 
     var ur = [null, null, null];
@@ -8,10 +28,10 @@ $(function() {
     var boardTotal = [];
     var player;
     var turn = 1;
-    var whoo = new Audio('sounds/whoo.wav');
-    var mir = new Audio('sounds/miracle2.wav');
-    var doh = new Audio('sounds/doh1.wav');
-    var intro = new Audio('sounds/intro.mp3');
+    // var whoo = new Audio('sounds/whoo.wav');
+    // var mir = new Audio('sounds/miracle2.wav');
+    // var doh = new Audio('sounds/doh1.wav');
+    // var intro = new Audio('sounds/intro.mp3');
     var enabled = {
         b1: true,
         b2: true,
@@ -24,7 +44,6 @@ $(function() {
         b9: true
     };
 
-    intro.play();
 
     function boardClear() {
         ur = [null, null, null];
@@ -71,7 +90,7 @@ $(function() {
 
         if (boardTotal.indexOf(3) !== -1) {
             // $("#center").append("<img src='assets/doughnut.png' class='nut'>");
-            whoo.play();
+            ion.sound.play("whoo");
             $("h1").hide();
             $("#hWin").show();
             setTimeout(function() { $("#hWin").hide(); }, 2000);
@@ -81,7 +100,8 @@ $(function() {
             setTimeout(function() { boardClear(); }, 3300);
 
         } else if (boardTotal.indexOf(300) !== -1) {
-            mir.play();
+            // mir.play();
+            ion.sound.play("miracle2");
             $("h1").hide();
             $("#mWin").show();
             setTimeout(function() { $("#mWin").hide(); }, 2000);
@@ -91,7 +111,8 @@ $(function() {
             setTimeout(function() { boardClear(); }, 3200);
 
         } else if (turn > 9) {
-            doh.play();
+            // doh.play();
+            ion.sound.play("doh1");
             $("h1").hide();
             $("#tie").show();
             setTimeout(function() { $("#tie").hide(); }, 2000);
