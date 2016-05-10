@@ -24,22 +24,19 @@ $(function() {
         path: "sounds/"
     });
 
-    $("#dnut").jqFloat({
-    width: 20,
-    height: 20,
-    speed: 1250
-  });
-
-
+    setTimeout(function() {
+        $("#dnut").jqFloat({
+            width: 20,
+            height: 50,
+            speed: 2000
+        });
+    }, 50);
 
     function intro() {
         $("#dnut").hide();
         ion.sound.play("intro");
         $(".game").show();
         $(".msg").hide();
-
-        console.log("introfunction");
-
     };
 
     // window.onload = (function() {
@@ -149,7 +146,7 @@ $(function() {
     //Buttons
 
     $("#dnut").click(function() {
-      intro();
+        intro();
 
     });
 
