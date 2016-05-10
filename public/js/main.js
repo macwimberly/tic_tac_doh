@@ -2,7 +2,6 @@ $(function() {
 
     $(".game").hide();
 
-
     ion.sound({
         sounds: [{
             name: "intro",
@@ -30,21 +29,15 @@ $(function() {
             height: 50,
             speed: 2000
         });
-    }, 50);
+    }, 75);
 
     function intro() {
+        $("#dnut").jqFloat('stop');
         $(".intro").hide();
         ion.sound.play("intro");
         $(".game").show();
         $(".msg").hide();
     };
-
-    // window.onload = (function() {
-    //     intro();
-    //     console.log("onload");
-    // });
-
-    // $(".msg").hide();
 
     var ur = [null, null, null];
     var mr = [null, null, null];
@@ -83,7 +76,6 @@ $(function() {
             b8: true,
             b9: true
         };
-
         turn = 1;
     }
 
@@ -94,7 +86,6 @@ $(function() {
         } else {
             player = "0";
         }
-
         turn++;
     }
 
@@ -139,7 +130,6 @@ $(function() {
             setTimeout(function() { $("#again").hide(); }, 3100);
             setTimeout(function() { $("#title").show(); }, 3101);
             setTimeout(function() { boardClear(); }, 3200);
-
         }
     }
 
@@ -147,7 +137,6 @@ $(function() {
 
     $("#dnut").click(function() {
         intro();
-
     });
 
     $("#1").click(function() {
