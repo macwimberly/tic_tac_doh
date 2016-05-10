@@ -1,4 +1,5 @@
 $(function() {
+    $(".game").hide();
 
     ion.sound({
         sounds: [{
@@ -21,17 +22,15 @@ $(function() {
         path: "sounds/"
     });
 
-    // ion.sound.play("intro");
-
     function intro() {
         ion.sound.play("intro");
         console.log("introfunction");
 
     };
 
-    window.onload = (function() {
-        intro();
-        console.log("onload");
+    // window.onload = (function() {
+    //     intro();
+    //     console.log("onload");
     });
 
     $(".msg").hide();
