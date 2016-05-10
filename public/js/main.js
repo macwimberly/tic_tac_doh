@@ -24,6 +24,14 @@ $(function() {
         path: "sounds/"
     });
 
+    $("#dnut").jqFloat({
+    width: 20,
+    height: 20,
+    speed: 1250
+  });
+
+
+
     function intro() {
         $("#dnut").hide();
         ion.sound.play("intro");
