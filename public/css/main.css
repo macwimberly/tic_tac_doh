@@ -15,10 +15,14 @@ body {
 
 #dnut {
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 100px;
   width: 287px;
 
-  text-align: center;
+/*  #ddiv {
+    margin-top: 50px;
+  }*/
+
+
 }
 
 h1 {
@@ -65,6 +69,7 @@ td {
 @media (max-width: 760px) {
     h1 {
         font-size: 35px;
+
     }
     #middleBarRight {
         margin: 10px;

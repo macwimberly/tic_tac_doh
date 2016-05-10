@@ -33,7 +33,7 @@ $(function() {
     }, 50);
 
     function intro() {
-        $("#dnut").hide();
+        $(".intro").hide();
         ion.sound.play("intro");
         $(".game").show();
         $(".msg").hide();
