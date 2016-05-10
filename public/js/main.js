@@ -1,5 +1,7 @@
 $(function() {
+
     $(".game").hide();
+
 
     ion.sound({
         sounds: [{
@@ -23,7 +25,11 @@ $(function() {
     });
 
     function intro() {
+        $("#dnut").hide();
         ion.sound.play("intro");
+        $(".game").show();
+        $(".msg").hide();
+
         console.log("introfunction");
 
     };
@@ -31,9 +37,9 @@ $(function() {
     // window.onload = (function() {
     //     intro();
     //     console.log("onload");
-    });
+    // });
 
-    $(".msg").hide();
+    // $(".msg").hide();
 
     var ur = [null, null, null];
     var mr = [null, null, null];
@@ -133,6 +139,11 @@ $(function() {
     }
 
     //Buttons
+
+    $("#dnut").click(function() {
+      intro();
+
+    });
 
     $("#1").click(function() {
 
